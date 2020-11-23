@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid black;
+}
+
+.nav, footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, .9);
+    border-bottom: solid black 1px;
+    width: 100%;
+}
+
+.nav-item, .nav-item>a {
+    font-size: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.nav-item:hover, .nav-item>a:hover .nav-item:focus, .nav-item>a:focus {
+    color: rgb(213, 102, 102)
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.content-box {
+    width: 100%;
+    position: relative;
+    
+}
+
+input[type=button] {
+    width: 6rem;
+    height: 3rem;
+    font-size: 60%;
+    transition-timing-function: ease-in;
+    transition-duration: .1s;
+}
+
+input[type=button]:hover {
+    width: 6.1rem;
+    height: 3.1rem;
+    font-size: 70%;
+}
+
+/****** CUSTOM STYLES ******/
+
+#intro-content, #about-content {
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    visibility: visible;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    left: 50%;
+}
+
+#about-content {
+    visibility: hidden;
+    color: rgba(0, 0, 0, 0.0);
+    transition-delay: .0s;
+}
+/****** Content Fade Transition ******/
+.gears {
+    width: 100%;
+    position: absolute;
+    right: 21%;
+    top: -10%;
+    z-index: -1;
+}
+
+/****** Media Queries *******/
+@media screen and (max-width: 768px) {
+    h1,h2,h3, h4 {
+        font-size: .7rem !important;
+    }
+    .gears {
+        right: -30%;
+        top: -20%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container, .container-fluid {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,h2,h3 {
+        font-size: 2rem;
+    }
+
+    .gears {
+        right: 10%;
+        top: 30%;
+    }
+    #intro-content, #about-content {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: rgba(240, 248, 255,.9);
+        width: 100%;
+        left: 0%;
+    }
+}
+
+

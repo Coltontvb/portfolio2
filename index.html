@@ -6,40 +6,94 @@
     <title>Coltontvb.codes | Portfolio</title>
     <!--CSS-->
     <link rel="stylesheet" href="./public/css/main_styles.css">
+    <script src="https://kit.fontawesome.com/ca40fbe12c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="nav-item scroll-btn">Home</div>
-        <div class="nav-item scroll-btn">About</div>
-    </div>
-    <div class="container-fluid main-wrapper">
+    <a id="nav-jump-loc"></a>
+    <nav class="nav-wrapper">
+        <div class="nav-row">
+            <div class="nav-header">Colton Van Bastelaere.</div>
+            <div id="nav-about"            class="nav-item">A Bit About me</div>
+            <div id="nav-what-i-do"        class="nav-item">What I do Best</div>
+            <div id="nav-current-projects" class="nav-item">Current Projects</div>
+        </div>
+    </nav>
+    <a href="#nav-jump-loc"><div class="nav-jumper"><i class="fas fa-bars"></i></div></a>
+    <span id="jump-location"></span>
+    <section class="section-wrapper hidden">
         <div class="row">
-            <img class="gears" src="./public/images/rotatingGears.svg" alt="rotatingGears" srcset="">  
-            <div id="content" class="container-fluid content-box">
-                <div id="intro-content">
-                    <h1>Hi, I'm Colton</h1>
-                    <h3>I <u>design</u>, <u>code</u> and <u>test</u> user interfaces for websites</h3>
-                    <input class="scroll-btn" type="button" value="About Me">
-                </div>
-                <div id="about-content">
-                    <h1>About Me</h1>
-                    <h3>Computer programming diploma candidate, <u>April 2021</u></h3>
-                    <h4>Developer, Traveler (Not time &#9202;) and &#9749; enthusiast</h4>
-                    <input class="scroll-btn" type="button" value="Intro">
-                </div>
+            <div class="container-fluid">
+                <h1 class="underline">A Bit About me</h1>
+                <h3>Hello there.</h3>
+                <h3>I'm Colton Van Bastelaere</h3>
+                <p>I am a computer programming student</p>
+                <p>and am due to graduate early 2021!</p>
+                <hr>
+                <h3>My History</h3>
+                <p>I was an Automotive Tech for the first 10 years of my career, but I was due for a change.</p>
+                <p>With an interest in emerging technology and a drive to learn, I decided to re-educate myself in computer programming!</p>
+                <p><strong>This skillset makes me unique and invaluable in a number of ways</strong></p>
+                <ol>
+                    <li>Thinking systematically</li>
+                    <li>Using ingenuity to solve your problems</li>
+                    <li>Learning new technology fast and developing methods that meet and exceed given requirements</li>
+                    <p>And finally:</p>
+                    <li>Managing my time, and in turn your time (and money) efficiently</li>
+                </ol>
             </div>
-        </div> 
-    </div>
-    <footer>
+        </div>
+    </section>
+    <section class="section-wrapper hidden">
+        <div class="row">
+            <div class="container-fluid">
+                <h1 class="underline">What I Do Best</h1>
+                <h3>Technologies</h3>
+                <ol>
+                    <li>Hypertext Markup Language</li>
+                    <li>Cascading Stylesheets</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                    <li>MongoDB</li>
+                    <li>C# Web Forms and Console Applications</li>
+                    <li>Git</li>
+                </ol>
+                <h3>Things I am learning</h3>
+                <ol>
+                    <li>C# ASP.NET</li>
+                    <li>T-SQL</li>
+                    <li>Java</li>
+                </ol>
+                <p><strong>My education also includes project development/management, product testing and analysis and UI/UX design!</strong></p>
+                <p>I also do my own graphics including svg, pixel and professional photography</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-wrapper hidden">
+        <div class="row">
+            <div class="container-fluid">
+                <h1 class="underline">Current Projects</h1>
+                <ol>
+                    <li>2021 Computer Programming Diploma</li>
+                    <li>React Frontend | NodeJS Backend Blog/E-Commerce API</li>
+                    <li>Java SQL CRUD Application (Personal Learning)</li>
+                </ol>
+                <p><strong>See My Github <a href="https://github.com/Coltontvb">Here</a></strong></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-wrapper">
         <div class="container">
-            <div class="row">
-                <div class=nav-item><a href="https://github.com/Coltontvb">Github</a></div>
-                <div class=nav-item><a href="https://www.linkedin.com/in/colton-van-bastelaere-0751b6129/">LinkedIn</a></div>
-                <div id="dateLabel" class=nav-item></div>
-            </div>
-        </div>    
+            <h3 class="footer-item"><a href="https://github.com/Coltontvb"></a> Github</h3>
+        </div>
+        <div class="container">
+            <h3 class="footer-item"><a href="https://codepen.io/your-work/"></a> Codepen</h3>
+        </div>
+        <div class="container">
+            <h3 id="dateLabel" class="footer-item"><!--Dynamic Date--></h3>
+        </div>
     </footer>
-    <script src="./public/js/pageScroll.js"></script>
-    <script src="./public/js/getDate.js"></script>
+    <script src="/public/js/getDate.js"></script>
+    <script src="/public/js/nav-selection.js"></script>
 </body>
 </html>

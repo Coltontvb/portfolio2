@@ -118,6 +118,7 @@ footer.footer-wrapper {
     min-height: 100vh;
     align-items: flex-start;
     background-image: none;
+    align-items: center;
 }
 
 .nav-item {
@@ -193,3 +194,19 @@ footer.footer-wrapper {
 }
 
 
+@media screen and (min-width: 900px){
+    .section-wrapper {
+        background-image: url(../images/floatingNodes.svg);
+        background-repeat: no-repeat;
+        background-position: 300px 50px;
+    }
+    .nav-row {
+        background-image: url(../images/rotatingGears.svg);
+        background-repeat: no-repeat;
+        background-position: -300px 50px;
+    }
+    .footer-item {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
